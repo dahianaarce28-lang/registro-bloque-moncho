@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Institucional</title>
+    <link rel="stylesheet" href="css.css">
+    <!-- SDK de Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div class="card-container">
+        <div class="icon-header">
+            <span>🌙</span>
+            <span class="sparkle">✨</span>
+        </div>
+        
+        <h1>Registro Institucional</h1>
+        <p class="subtitle">Dominio obligatorio: <strong>@asuncionescalada.edu.py</strong></p>
+
+        <form id="registerForm">
+            <div class="input-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" placeholder="usuario@asuncionescalada.edu.py" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Contraseña (Mínimo 6 caracteres)</label>
+                <input type="password" id="password" placeholder="••••••••" required minlength="6">
+            </div>
+
+            <button type="submit" id="submitBtn">Registrarse con Estilo</button>
+        </form>
+
+        <div id="mensaje" class="message"></div>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
